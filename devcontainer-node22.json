@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "image": "node:22.15.0-bookworm", // Ajusta la versión de Node.js según tus necesidades
+  "runArgs": [
+    "--env",
+    "TZ=America/Mexico_City",
+    "--volume",
+    "/etc/localtime:/etc/localtime:ro",
+    "--volume",
+    "/etc/timezone:/etc/timezone:ro"
+  ],
+  "features": {
+    "git": "latest"
+  },
+  "postCreateCommand": "sh -c 'npm install'",
+  "forwardPorts": [3000],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Gruntfuggly.activitusbar",
+        "pmneo.tsimporter",
+        "usernamehw.errorlens",
+        "aaron-bond.better-comments",
+        "tal7aouy.rainbow-bracket",
+        "PKief.material-icon-theme",
+        "fabiospampinato.vscode-monokai-night"
+      ]
+    }
+  }
+}
