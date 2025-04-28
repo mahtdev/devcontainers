@@ -1,9 +1,9 @@
 {
-  "name": "",
+  "name": "", //Dale un nombre a tu contenedor
   "image": "node:22.15.0-bookworm", // Ajusta la versión de Node.js según tus necesidades
   "runArgs": [
     "--env",
-    "TZ=America/Mexico_City",
+    "TZ=America/Mexico_City", //Cambia la zona horario a tu pais
     "--volume",
     "/etc/localtime:/etc/localtime:ro",
     "--volume",
